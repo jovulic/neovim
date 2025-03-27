@@ -208,7 +208,12 @@ return {
       inline = { adapter = "codestral" },
     },
     specs = {
-      { "AstroNvim/astroui", opts = { icons = { CodeCompanion = "" } } },
+      {
+        "AstroNvim/astroui",
+        opts = {
+          icons = { CodeCompanion = "" },
+        },
+      },
     },
   },
 }
