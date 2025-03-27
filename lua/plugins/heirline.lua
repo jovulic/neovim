@@ -33,6 +33,7 @@ return {
           },
           {
             condition = function(self) return self.processing end,
+            hl = { fg = "yellow" },
           },
         },
       },
