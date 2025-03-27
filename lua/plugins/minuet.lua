@@ -8,8 +8,8 @@ return {
     virtualtext = {
       auto_trigger_ft = {},
       keymap = {
-        next = "<C-a>",
-        accept = "<Right>",
+        next = "<C-s>",
+        accept = "<C-a>",
       },
     },
     provider = "openai_fim_compatible",
