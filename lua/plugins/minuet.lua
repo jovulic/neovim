@@ -30,7 +30,7 @@ return {
         end_point = "http://localhost:11434/v1/completions",
         model = "codestral",
         optional = {
-          max_tokens = 256,
+          max_tokens = 56,
           top_p = 0.9,
         },
       },
