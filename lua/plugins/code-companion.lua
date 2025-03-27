@@ -204,7 +204,7 @@ return {
       end,
     },
     strategies = {
-      chat = { adapter = "deepseek-coder" },
+      chat = { adapter = "deepseek_coder" },
       inline = { adapter = "codestral" },
     },
     specs = {
