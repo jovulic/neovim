@@ -73,7 +73,7 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-        
+
         ["<Leader>a"] = { name = " Chat" },
         ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
         ["<Leader>ac"] = { ":CodeCompanionChat<CR>", desc = "Chat" },
