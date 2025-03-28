@@ -41,6 +41,18 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "lua_ls",
+      "bashls",
+      "taplo",
+      "marksman",
+      "sqls",
+      "buf_ls",
+      "nixd",
+      "gopls",
+      "vtsls",
+      "volar",
+      "basedpyright",
+      "clangd",
     },
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
@@ -65,6 +77,8 @@ return {
     },
     -- Configure buffer local auto commands to add when attaching a language server
     autocmds = {
+      -- Disable eslint format on save.
+      eslint_fix_on_save = false,
       -- first key is the `augroup` to add the auto commands to (:h augroup)
       lsp_codelens_refresh = {
         -- Optional condition to create/delete auto command group
