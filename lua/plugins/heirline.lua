@@ -15,7 +15,7 @@ return {
       status.component.fill(),
       status.component.builder {
         {
-          provider = "",
+          provider = "",
           static = {
             processing = false,
           },
@@ -33,7 +33,8 @@ return {
           },
           {
             condition = function(self) return self.processing end,
-            hl = { fg = "yellow" },
+            provider = "",
+            hl = { fg = "white" },
           },
         },
       },
