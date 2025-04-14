@@ -40,8 +40,12 @@ return {
     config = function(plugin, opts)
       -- print(vim.inspect(opts.ensure_installed))
       opts.ensure_installed = {
+        "stylua",
+        "selene",
         "eslint",
         "prettierd",
+        "black",
+        "isort",
       }
       require("mason-null-ls").setup(opts)
     end,
