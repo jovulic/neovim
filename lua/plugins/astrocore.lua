@@ -80,26 +80,26 @@ return {
         ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
         ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
 
-        ["<leader>n"] = { name = "󰙨 Tests" },
-        ["<leader>nr"] = {
+        ["<leader>k"] = { name = "󰙨 Tests" },
+        ["<leader>kr"] = {
           function() require("neotest").run.run() end,
           desc = "Run nearest test",
         },
-        ["<leader>nf"] = {
+        ["<leader>kf"] = {
           function() require("neotest").run.run(vim.fn.expand "%") end,
           desc = "Run all tests in file",
         },
-        ["<leader>ns"] = {
+        ["<leader>ks"] = {
           function() require("neotest").run.stop() end,
           desc = "Stop nearest test",
         },
-        ["<leader>na"] = {
+        ["<leader>ka"] = {
           function() require("neotest").run.attach() end,
           desc = "Attach to nearest test",
         },
-        ["<leader>no"] = { ":lua require('neotest').output.open({ enter = true })<CR>", desc = "Show test output" },
-        ["<leader>nO"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Show test summary" },
-        ["<leader>ng"] = { ":GoTestAdd<CR>", desc = "Generate tests for the current selection" },
+        ["<leader>ko"] = { ":lua require('neotest').output.open({ enter = true })<CR>", desc = "Show test output" },
+        ["<leader>kO"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Show test summary" },
+        ["<leader>kg"] = { ":GoTestAdd<CR>", desc = "Generate tests for the current selection" },
 
         ["<leader>xo"] = { ":copen<CR>", desc = "Open the quickfix window" },
         ["<leader>xc"] = { ":cclose<CR>", desc = "Close the quickfix window" },
