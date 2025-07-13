@@ -20,6 +20,7 @@ return {
   { import = "astrocommunity.pack.proto" },
   { import = "astrocommunity.pack.nix" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.golangci-lint" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.python" },
