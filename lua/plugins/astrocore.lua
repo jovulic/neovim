@@ -74,43 +74,43 @@ return {
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
 
-        ["<Leader>a"] = { name = " Chat" },
-        ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
-        ["<Leader>ac"] = { ":CodeCompanionChat Toggle<CR>", desc = "Chat" },
-        ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
-        ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
+        -- ["<Leader>a"] = { name = " Chat" },
+        -- ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
+        -- ["<Leader>ac"] = { ":CodeCompanionChat Toggle<CR>", desc = "Chat" },
+        -- ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
+        -- ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
 
-        ["<leader>k"] = { name = "󰙨 Tests" },
-        ["<leader>kr"] = {
+        ["<Leader>k"] = { name = "󰙨 Tests" },
+        ["<Leader>kr"] = {
           function() require("neotest").run.run() end,
           desc = "Run nearest test",
         },
-        ["<leader>kf"] = {
+        ["<Leader>kf"] = {
           function() require("neotest").run.run(vim.fn.expand "%") end,
           desc = "Run all tests in file",
         },
-        ["<leader>ks"] = {
+        ["<Leader>ks"] = {
           function() require("neotest").run.stop() end,
           desc = "Stop nearest test",
         },
-        ["<leader>ka"] = {
+        ["<Leader>ka"] = {
           function() require("neotest").run.attach() end,
           desc = "Attach to nearest test",
         },
-        ["<leader>ko"] = { ":lua require('neotest').output.open({ enter = true })<CR>", desc = "Show test output" },
-        ["<leader>kO"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Show test summary" },
-        ["<leader>kg"] = { ":GoTestAdd<CR>", desc = "Generate tests for the current selection" },
+        ["<Leader>ko"] = { ":lua require('neotest').output.open({ enter = true })<CR>", desc = "Show test output" },
+        ["<Leader>kO"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Show test summary" },
+        ["<Leader>kg"] = { ":GoTestAdd<CR>", desc = "Generate tests for the current selection" },
 
-        ["<leader>xo"] = { ":copen<CR>", desc = "Open the quickfix window" },
-        ["<leader>xc"] = { ":cclose<CR>", desc = "Close the quickfix window" },
-        ["<leader>xl"] = { ":cexpr<CR>", desc = "Clear (replace) the quickfix window" },
+        ["<Leader>xo"] = { ":copen<CR>", desc = "Open the quickfix window" },
+        ["<Leader>xc"] = { ":cclose<CR>", desc = "Close the quickfix window" },
+        ["<Leader>xl"] = { ":cexpr<CR>", desc = "Clear (replace) the quickfix window" },
       },
       v = {
-        ["<Leader>a"] = { name = " Chat" },
-        ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
-        ["<Leader>ac"] = { ":CodeCompanionChat<CR>", desc = "Chat" },
-        ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
-        ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
+        -- ["<Leader>a"] = { name = " Chat" },
+        -- ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
+        -- ["<Leader>ac"] = { ":CodeCompanionChat<CR>", desc = "Chat" },
+        -- ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
+        -- ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
       },
       t = {
         -- setting a mapping to false will disable it
