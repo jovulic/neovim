@@ -1,7 +1,7 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   cmd = "RenderMarkdown",
-  ft = { "markdown", "codecompanion" },
+  ft = { "markdown" },
   dependencies = {
     {
       "nvim-treesitter/nvim-treesitter",
