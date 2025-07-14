@@ -10,10 +10,4 @@ vim.filetype.add {
     foo = "fooscript",
     zed = "authzed",
   },
-  filename = {
-    ["Foofile"] = "fooscript",
-  },
-  pattern = {
-    ["~/%.config/foo/.*"] = "fooscript",
-  },
 }
