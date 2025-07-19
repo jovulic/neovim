@@ -73,45 +73,8 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
-
-        -- ["<Leader>a"] = { name = " Chat" },
-        -- ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
-        -- ["<Leader>ac"] = { ":CodeCompanionChat Toggle<CR>", desc = "Chat" },
-        -- ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
-        -- ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
-
-        ["<Leader>k"] = { name = "󰙨 Tests" },
-        ["<Leader>kr"] = {
-          function() require("neotest").run.run() end,
-          desc = "Run nearest test",
-        },
-        ["<Leader>kf"] = {
-          function() require("neotest").run.run(vim.fn.expand "%") end,
-          desc = "Run all tests in file",
-        },
-        ["<Leader>ks"] = {
-          function() require("neotest").run.stop() end,
-          desc = "Stop nearest test",
-        },
-        ["<Leader>ka"] = {
-          function() require("neotest").run.attach() end,
-          desc = "Attach to nearest test",
-        },
-        ["<Leader>ko"] = { ":lua require('neotest').output.open({ enter = true })<CR>", desc = "Show test output" },
-        ["<Leader>kO"] = { ":lua require('neotest').summary.toggle()<CR>", desc = "Show test summary" },
-        ["<Leader>kg"] = { ":GoTestAdd<CR>", desc = "Generate tests for the current selection" },
-
-        ["<Leader>xo"] = { ":copen<CR>", desc = "Open the quickfix window" },
-        ["<Leader>xc"] = { ":cclose<CR>", desc = "Close the quickfix window" },
-        ["<Leader>xl"] = { ":cexpr<CR>", desc = "Clear (replace) the quickfix window" },
       },
-      v = {
-        -- ["<Leader>a"] = { name = " Chat" },
-        -- ["<Leader>aa"] = { ":CodeCompanionActions<CR>", desc = "Actions" },
-        -- ["<Leader>ac"] = { ":CodeCompanionChat<CR>", desc = "Chat" },
-        -- ["<Leader>ad"] = { ":CodeCompanion<CR>", desc = "Inline" },
-        -- ["<Leader>af"] = { ":CodeCompanionCmd<CR>", desc = "Command" },
-      },
+      v = {},
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
