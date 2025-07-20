@@ -65,15 +65,6 @@ return {
           },
         },
       },
-      gopls = {
-        settings = {
-          gopls = {
-            analyses = {
-              shadow = false,
-            },
-          },
-        },
-      },
     },
     -- customize how language servers are attached
     handlers = {
