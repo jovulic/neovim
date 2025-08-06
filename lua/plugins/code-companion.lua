@@ -98,6 +98,20 @@ return {
             },
           })
         end,
+        gpt_oss = function()
+          return require("codecompanion.adapters").extend("ollama", {
+            schema = {
+              name = "gps_oss",
+              formatted_name = "GPT OSS",
+              model = {
+                default = "gpt-oss:20b",
+                choices = {
+                  "gpt-oss:20b",
+                },
+              },
+            },
+          })
+        end,
         codestral = function()
           return require("codecompanion.adapters").extend("ollama", {
             schema = {
@@ -211,7 +225,7 @@ return {
         end,
       },
       strategies = {
-        chat = { adapter = "deepseek_coder" },
+        chat = { adapter = "gpt_oss" },
         inline = { adapter = "codestral" },
       },
     },
