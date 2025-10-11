@@ -26,6 +26,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
 
+  { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.git.gitlinker-nvim" },
 }
