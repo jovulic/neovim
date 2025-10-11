@@ -30,7 +30,7 @@ return {
         "jsonls",
         "yamlls",
         "buf_ls",
-        "volar",
+        -- "volar",
       }
       require("mason-lspconfig").setup(opts)
     end,
