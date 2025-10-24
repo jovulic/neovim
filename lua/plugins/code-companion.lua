@@ -97,7 +97,19 @@ return {
       },
       strategies = {
         chat = { adapter = "gemini_cli" },
-        inline = { adapter = "codestral" },
+        inline = {
+          adapter = "gemini_cli",
+          keymaps = {
+            accept_change = {
+              modes = { n = "gaa" },
+              description = "Accept the suggested change",
+            },
+            reject_change = {
+              modes = { n = "gar" },
+              description = "Reject the suggested change",
+            },
+          },
+        },
       },
     },
   },
