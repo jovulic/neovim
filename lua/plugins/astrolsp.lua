@@ -77,6 +77,26 @@ return {
           },
         },
       },
+      nixd = {
+        settings = {
+          nixd = {
+            formatting = {
+              command = { "nixfmt" },
+            },
+            nixpkgs = {
+              expr = 'import (builtins.getFlake "/home/me/forge").inputs.nixpkgs { }',
+            },
+            options = {
+              nixos = {
+                expr = '(builtins.getFlake "/home/me/forge").nixosConfigurations.licious.options',
+              },
+              ["home-manager"] = {
+                expr = '(builtins.getFlake "/home/me/forge").homeConfigurations."me@licious".options',
+              },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
