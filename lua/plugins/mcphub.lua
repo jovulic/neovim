@@ -3,7 +3,7 @@ return {
   {
     "ravitemer/mcphub.nvim",
     opts = {
-      port = 3000,
+      port = 37373,
     },
   },
 }
