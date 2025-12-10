@@ -29,4 +29,6 @@ return {
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.git.gitlinker-nvim" },
+
+  { import = "astrocommunity.editing-support.mcphub-nvim" },
 }
