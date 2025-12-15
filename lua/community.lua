@@ -25,6 +25,7 @@ return {
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.rust" },
 
   { import = "astrocommunity.test.neotest" },
   { import = "astrocommunity.quickfix.nvim-bqf" },
