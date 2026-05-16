@@ -1,8 +1,7 @@
 require("lazy").setup({
   {
     "AstroNvim/AstroNvim",
-    -- version = "^5", -- Remove version tracking to elect for nightly AstroNvim
-    branch = "v6", -- https://github.com/AstroNvim/AstroNvim/pull/2822
+    version = "^6",
     import = "astronvim.plugins",
     opts = { -- AstroNvim options must be set here with the `import` key
       mapleader = " ", -- This ensures the leader key must be configured before Lazy is set up
