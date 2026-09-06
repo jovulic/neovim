@@ -14,6 +14,13 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
     opts = {
+      extensions = {
+        mcphub = {
+          opts = {
+            make_vars = false, -- workaround for codecompanion v15 removing chat.variables
+          },
+        },
+      },
       ---@type CodeCompanion.AdapterArgs
       adapters = {
         acp = {
