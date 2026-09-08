@@ -23,6 +23,7 @@ return {
   { import = "astrocommunity.pack.golangci-lint" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.rust" },
