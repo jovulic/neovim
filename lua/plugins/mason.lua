@@ -21,9 +21,8 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
-    config = function(plugin, opts)
-      -- print(vim.inspect(opts.ensure_installed))
-      opts.ensure_installed = {
+    opts = function(_, opts)
+      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         -- astrovim pack=docker
         "docker_compose_language_service",
         "dockerls",
@@ -31,23 +30,20 @@ return {
         "yamlls",
         "buf_ls",
         -- "volar",
-      }
-      require("mason-lspconfig").setup(opts)
+      })
     end,
   },
   {
     "jay-babu/mason-null-ls.nvim",
-    config = function(plugin, opts)
-      -- print(vim.inspect(opts.ensure_installed))
-      opts.ensure_installed = {
+    opts = function(_, opts)
+      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "stylua",
         "selene",
         "eslint",
         "prettierd",
         "black",
         "isort",
-      }
-      require("mason-null-ls").setup(opts)
+      })
     end,
   },
   -- use mason-tool-installer for automatically installing Mason packages
