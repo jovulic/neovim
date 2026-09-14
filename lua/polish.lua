@@ -11,3 +11,12 @@ vim.filetype.add {
     zed = "authzed",
   },
 }
+
+-- Define a user command to view all past notifications in a new buffer
+vim.api.nvim_create_user_command("Notifications", function()
+  if _G.Snacks and _G.Snacks.notifier then
+    _G.Snacks.notifier.show_history()
+  else
+    vim.cmd "messages"
+  end
+end, {})
