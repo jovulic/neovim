@@ -29,8 +29,21 @@ return {
         "jsonls",
         "yamlls",
         "buf_ls",
-        -- "volar",
       })
+
+      -- Intercept and sanitize invalid entries that might be added by
+      -- community packs.
+      local clean_installed = {}
+      for _, server in ipairs(opts.ensure_installed or {}) do
+        if server == "volar" then
+          -- "volar" waswofficially renamed to "vue_ls" in modern
+          -- mason-lspconfig versions.
+          table.insert(clean_installed, "vue_ls")
+        elseif server ~= "docker-language-server" then
+          table.insert(clean_installed, server)
+        end
+      end
+      opts.ensure_installed = clean_installed
     end,
   },
   {
