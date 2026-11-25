@@ -35,6 +35,7 @@ return {
         guifont = { "NotoMono Nerd Font", ":h11" }, -- search with :set guifont=*
         listchars = { space = "·", nbsp = "c", precedes = "«", extends = "»", eol = "↲", tab = "▸-" },
         scrolloff = 999, -- keep cursor centered
+        timeoutlen = 300, -- time in ms to wait for a mapped sequence to complete
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
