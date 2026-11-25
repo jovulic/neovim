@@ -89,7 +89,7 @@ return {
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
-        ["<esc>"] = { "<C-\\><C-n>", desc = "Switch to normal mode" },
+        ["<esc><esc>"] = { "<C-\\><C-n>", desc = "Switch to normal mode" },
       },
       i = {
         ["<C-h>"] = { "<C-W>", desc = "Delete word with backspace" },
