@@ -32,5 +32,5 @@ return {
   { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.git.gitlinker-nvim" },
 
-  { import = "astrocommunity.editing-support.mcphub-nvim" },
+  { import = "astrocommunity.ai.sidekick-nvim" },
 }
